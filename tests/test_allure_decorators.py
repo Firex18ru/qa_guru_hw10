@@ -21,7 +21,7 @@ def open_main_page():
 @allure.step("ищем репозиторий {repo}")
 def search_for_repository(repo):
     s(".header-search-button").click()
-    s("#query-builder-test").send_keys("eroshenkoam/allure-example")
+    s("#query-builder-test").send_keys(repo)
     s("#query-builder-test").submit()
 
 
